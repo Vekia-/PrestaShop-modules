@@ -61,7 +61,7 @@
 	</table>
 	<div id="block-order-detail" class="hidden">&nbsp;</div>
 	{else}
-		<p class="warning">{l s='You have not placed any orders.'}</p>
+		<p class="warning">{l s='You have not placed any orders.' mod='loyalty'}</p>
 	{/if}
 </div>
 <div id="pagination" class="pagination">
@@ -105,7 +105,7 @@
 	{if $orders|@count > 10}
 		<form action="{$pagination_link}" method="get" class="pagination">
 			<p>
-				<input type="submit" class="button_mini" value="{l s='OK'}" />
+				<input type="submit" class="button_mini" value="{l s='OK' mod='loyalty'}" />
 				<label for="nb_item">{l s='items:' mod='loyalty'}</label>
 				<select name="n" id="nb_item">
 				{foreach from=$nArray item=nValue}
